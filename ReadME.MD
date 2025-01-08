@@ -124,9 +124,11 @@ Copy code
 ```
 #!/bin/bash
 # Don't update or save cookies; only use the static cookies file
-```
 
 yt-dlp --cookies cookies.txt "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+
+
 This way, even if the script is used repeatedly, it will always use the static cookies file without trying to update it.
 
 ## Summary
