@@ -28,3 +28,27 @@ Follow these steps to install and set up the project.
 
 
 
+## Installing yt-dlp on Linux (Debian/Ubuntu)
+You can easily install yt-dlp using pip, the Python package manager. Alternatively, you can also use a package manager like apt if available.
+
+Method 1: Using pip (recommended)
+Install yt-dlp using pip:
+
+
+  ```
+sudo apt update
+sudo apt install -y python3-pip
+sudo pip3 install -U yt-dlp
+  ```
+
+
+
+Verify the installation:
+
+
+  ```
+  yt-dlp --version
+
+  ```
+
+
