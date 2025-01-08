@@ -19,15 +19,6 @@ This project allows you to stream YouTube videos using **yt-dlp** and **FFmpeg**
 
 Follow these steps to install and set up the project.
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/streamer.git
-cd streamer
-
-
-
-
 
 
 ## Installation
