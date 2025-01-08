@@ -138,3 +138,132 @@ Static cookies: Only update the cookies manually when necessary, and use the sam
 This way, you ensure that your cookies file remains static and does not get overwritten after each use.
 
 
+
+
+
+
+
+
+
+
+
+
+To install and run PM2 on your VPS, follow these steps:
+
+## Step 1: Install Node.js (if not already installed)
+PM2 requires Node.js. If Node.js is not installed on your VPS, you can install it by following these commands:
+
+Update package list:
+
+Copy code
+```
+sudo apt update
+```
+
+
+## Install Node.js: On Ubuntu/Debian-based systems:
+
+Copy code
+```
+sudo apt install nodejs npm
+```
+
+
+Verify Node.js installation:
+
+Copy code
+```
+node -v
+npm -v
+```
+
+
+## Step 2: Install PM2 globally
+Once Node.js is installed, you can install PM2 globally using npm:
+
+## Install PM2:
+
+Copy code
+```
+sudo npm install -g pm2
+```
+
+
+Verify PM2 installation:
+
+Copy code
+```
+pm2 -v
+```
+
+
+## Step 3: Start your application with PM2
+To run your application using PM2, navigate to the directory containing your app and use the following command:
+
+Copy code
+```
+pm2 start <your-app.js>
+```
+
+
+Replace <your-app.js> with the filename of your app.
+
+## Step 4: Set PM2 to restart on server reboot (optional)
+You can configure PM2 to automatically restart your application if the VPS reboots:
+
+Generate startup script for PM2:
+
+Copy code
+```
+pm2 startup
+```
+
+
+This command will output another command that you need to run (e.g., sudo pm2 startup ubuntu).
+
+## Save the PM2 process list:
+
+Copy code
+```
+pm2 save
+```
+
+
+## Step 5: Monitoring and managing PM2 processes
+You can monitor your app's logs and status:
+
+View processes:
+
+Copy code
+```
+pm2 list
+```
+
+
+View logs:
+
+Copy code
+```
+pm2 logs
+```
+
+
+Stop a process:
+
+Copy code
+```
+pm2 stop <process-id>
+```
+
+
+Restart a process:
+
+Copy code
+```
+pm2 restart <process-id>
+```
+
+
+That's it! You now have PM2 installed and running on your VPS.
+
+
