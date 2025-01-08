@@ -26,7 +26,7 @@ Follow these steps to install and set up the project.
   curl -sL https://raw.githubusercontent.com/wayangkulit95/ytmngr/main/setup.sh -o setup.sh && chmod +x setup.sh && ./setup.sh
   ```
 
-
+### \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Installing yt-dlp on Linux (Debian/Ubuntu) //////////////////////////////
 
 ## Installing yt-dlp on Linux (Debian/Ubuntu)
 You can easily install yt-dlp using pip, the Python package manager. Alternatively, you can also use a package manager like apt if available.
@@ -146,7 +146,7 @@ This way, you ensure that your cookies file remains static and does not get over
 
 
 
-
+### \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ To install and run PM2 on your VPS //////////////////////////////
 
 To install and run PM2 on your VPS, follow these steps:
 
